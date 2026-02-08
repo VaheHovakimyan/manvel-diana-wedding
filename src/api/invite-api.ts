@@ -1,6 +1,8 @@
+import { BASE_URL } from "public/common/constants";
+
 export const sendInviteRequest = async (values: any) => {
   return await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/manvel-diana-wedding/create`,
+    `${BASE_URL}/api/manvel-diana-wedding/create`,
     {
       method: 'POST',
       body: JSON.stringify(values),
@@ -13,6 +15,6 @@ export const sendInviteRequest = async (values: any) => {
 
 export const getGuests = async () => {
   return await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/manvel-diana-wedding/guests`
+    `${BASE_URL}/api/manvel-diana-wedding/guests`
   );
 };

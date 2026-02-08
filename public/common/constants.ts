@@ -1,4 +1,4 @@
-export const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+export const BASE_URL = 'https://hraviratoms-server.onrender.com';
 type FAQItem = {
   id: number;
   question: string;

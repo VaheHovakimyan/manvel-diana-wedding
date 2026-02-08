@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import './Login.scss';
+import { BASE_URL } from 'public/common/constants';
 
 const Login = () => {
   const router = useRouter();
@@ -31,7 +32,7 @@ const Login = () => {
   }) => {
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/manvel-diana-wedding/login`,
+        `${BASE_URL}/api/manvel-diana-wedding/login`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
