@@ -15,19 +15,19 @@ const renderer = ({
   return (
     <div className="time_countdown">
       <div className="time_countdown_item">
-        <span className="time_value">{pad(days)}</span>
+        <div className="time_value">{pad(days)}</div>
         <span className="time_name">օր</span>
       </div>
       <div className="time_countdown_item">
-        <span className="time_value">{pad(hours)}</span>
+        <div className="time_value">{pad(hours)}</div>
         <span className="time_name">ժամ</span>
       </div>
       <div className="time_countdown_item">
-        <span className="time_value">{pad(minutes)}</span>
+        <div className="time_value">{pad(minutes)}</div>
         <span className="time_name">րոպե</span>
       </div>
       <div className="time_countdown_item">
-        <span className="time_value">{pad(seconds)}</span>
+        <div className="time_value">{pad(seconds)}</div>
         <span className="time_name">վայրկյան</span>
       </div>
     </div>
@@ -36,18 +36,18 @@ const renderer = ({
 
 interface ICountDownProps {
   title?: string;
-  month: number;
-  day: number;
+  month?: number;
+  day?: number;
   year?: number;
 }
 
 const CountDown: FC<ICountDownProps> = ({
   title,
-  month,
-  day,
-  year = new Date().getFullYear(),
+  month = 2,
+  day = 16,
+  year = 2026,
 }) => {
-  const countdownDate = new Date(year, month - 1, day, 0, 0, 0);
+  const countdownDate = new Date(year, month - 1, day, 17, 30, 0);
 
   return (
     <div className="countdown_main">

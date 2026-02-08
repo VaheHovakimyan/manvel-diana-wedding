@@ -15,6 +15,7 @@ import Footer from '@uikit/Template-design-components/footer/Footer';
 import WelcomeComp from '@uikit/Template-design-components/welcome/Welcome';
 import Sound from '@uikit/Template-design-components/sound/Sound';
 import TextComponent from '@uikit/Template-design-components/text-component/TextComponent';
+import CountDown from '@uikit/Template-design-components/count-down/CountDown';
 
 interface IWhiteIllusion {
   template?: TemplateDesign;
@@ -166,6 +167,8 @@ const WhiteIllusion: FC<IWhiteIllusion> = () => {
 
                 With love, Manvel & Diana`}
           imageUrl="/assets/manvel-diana/photo_2.webp"
+          type={'special'}
+          padding={'p-4'}
         />
         <Footer />
 
