@@ -31,10 +31,10 @@ const schema = yup.object().shape({
     .string()
     .oneOf(['true', 'false'], 'Պետք է ընտրեք Այո կամ Ոչ')
     .required('Այցելությունը պարտադիր է'),
-  bride_groom: yup
-    .string()
-    .oneOf(['Փեսա', 'Հարս'], 'Պետք է ընտրեք հարսի կամ փեսայի')
-    .required('Պարտադիր դաշտ'),
+  // bride_groom: yup
+  //   .string()
+  //   .oneOf(['Փեսա', 'Հարս'], 'Պետք է ընտրեք հարսի կամ փեսայի')
+  //   .required('Պարտադիր դաշտ'),
 });
 
 type FormData = yup.InferType<typeof schema>;
@@ -52,7 +52,7 @@ const InviteForm: React.FC = () => {
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       const response = await fetch(
-        `${BASE_URL}/api/vardges-tatev-wedding/create`,
+        `${BASE_URL}/api/manvel-diana-wedding/create`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -164,11 +164,11 @@ const InviteForm: React.FC = () => {
               </p>
             )}
           </div>
-          <div>
-            <label className="block text-[#4d3b2a] font-semibold mb-3">
+          {/* <div> */}
+            {/* <label className="block text-[#4d3b2a] font-semibold mb-3">
               Ու՞մ կողմից *
-            </label>
-            <div className="flex gap-10">
+            </label> */}
+            {/* <div className="flex gap-10">
               <label className="flex items-center space-x-2">
                 <input
                   type="radio"
@@ -188,13 +188,13 @@ const InviteForm: React.FC = () => {
                 />
                 <span className="text-[#5a4636]">Հարսի</span>
               </label>
-            </div>
-            {errors.bride_groom && (
+            </div> */}
+            {/* {errors.bride_groom && (
               <p className="text-[#d41919] text-sm mt-2">
                 {errors.bride_groom.message}
               </p>
-            )}
-          </div>
+            )} */}
+          {/* </div> */}
 
           <Button type="submit" text="Ուղարկել" variant="dark" />
         </form>

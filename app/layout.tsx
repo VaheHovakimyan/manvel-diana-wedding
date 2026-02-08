@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Hraviratoms.com',
-  description: 'Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին',
+  description: 'Սիրով հրավիրում ենք Ձեզ մեր նշանադրության արարողությանը',
 };
 
 export default function RootLayout({

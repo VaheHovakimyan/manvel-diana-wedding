@@ -1,7 +1,7 @@
 'use client';
 
 import CallTo from '../../uikit/Template-design-components/call-to/CallTo';
-import { ILocation, Template, TemplateDesign } from '../../../public/types';
+import { TemplateDesign } from '../../../public/types';
 import React, { FC, useState } from 'react';
 import './WhiteIllusion.scss';
 
@@ -22,8 +22,8 @@ interface IWhiteIllusion {
 
 const amData = {
   introBgImage: '',
-  maleName: 'Վարդգես',
-  femaleName: 'Տաթև',
+  maleName: 'Մանվել',
+  femaleName: 'Դիանա',
   introTitle: '',
   introDescription: '',
   introShort: '',
@@ -32,11 +32,11 @@ const amData = {
   hasMusic: true,
   sound: '',
   welcome: {
-    name1: 'Վարդան',
-    name2: 'Անի',
+    name1: 'Մանվել',
+    name2: 'Դիանա',
     start: 'Սիրելի հյուրեր',
     mid: 'Մենք ուրախ կլինենք, եթե դուք կիսեք մեզ հետ մեր կյանքի ամենահուզիչ և կարևոր պահերից մեկը',
-    end: 'Մեր հարսանիքի օրը',
+    end: 'Մեր նշանադրության արարողության օրը',
   },
   calendar: {
     month: 'Փետրվար',
@@ -47,43 +47,21 @@ const amData = {
     title2: 'ծրագիր',
   },
   footer: {
-    text: 'Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին',
+    text: 'Սիրով հրավիրում ենք Ձեզ մեր նշանադրության արարողությանը',
   },
   eventProgram: [
     {
-      eventName: 'Փեսայի տուն',
-      eventTime: '11:00',
+      eventName: 'Lianna Garden Hall',
+      eventTime: '17:30',
       eventPlace: 'ring',
-      map: 'https://yandex.com/navi/-/CLeaZLij',
-      mapName: 'փեսայի տուն',
-    },
-    {
-      eventName: 'Հարսի տուն',
-      eventTime: '12:00',
-      eventPlace: 'ring',
-      map: 'https://yandex.com/navi/-/CLea6A7t',
-      mapName: 'հարսի տուն',
-    },
-    {
-      eventName: 'Սուրբ Հովհաննես Մկրտիչ եկեղեցի',
-      eventTime: '15:00',
-      eventPlace: 'church',
-      map: 'https://yandex.com/navi/-/CLea6J6u',
-      mapName: 'եկեղեցի',
-    },
-    {
-      eventName: 'Մորենա ռեստորան (մեծ սրահ)',
-      eventTime: '17:00',
-      eventPlace: 'restaurant',
-      map: 'https://yandex.com/navi/-/CLea6U59',
-      mapName: 'ռեստորան',
-    },
+      map: 'https://yandex.com/maps/-/CPE~iL63',
+      mapName: 'Lianna Garden Hall',
+    }
   ],
   textComponent: {
     text1:
-      'Մեր կյանքում կարևոր իրադարձություն է սպասվում՝ մենք ընտանիք ենք կազմում և ցանկանում ենք Ձեզ հետ կիսել մեր կյանքի լուսավոր օրը',
-    text2:
-      'Ձեր ներկայությունը շատ կարևոր է մեզ համար, անհամբեր սպասում ենք ձեզ մեր հարսանիքին',
+      'With love in every detail, we invite you to join us in celebrating one of the most meaningful moments of our lives.',
+    text2: ``,
   },
 };
 
@@ -159,9 +137,9 @@ const WhiteIllusion: FC<IWhiteIllusion> = () => {
           <p className="guests-text">{data.introDescription}</p>
           <h3 className="married-title"> {data.introShort}</h3>
           <Calendar
-            month={10}
-            activeDay={15}
-            year={2025}
+            month={2}
+            activeDay={16}
+            year={2026}
             calendarSymbolColor="black"
           />
         </div>
@@ -169,7 +147,7 @@ const WhiteIllusion: FC<IWhiteIllusion> = () => {
         <TextComponent
           fontSize="20px"
           text={data.textComponent.text1}
-          imageUrl="/assets/vardges-tatev/photo_3.webp"
+          imageUrl="/assets/manvel-diana/photo_3.webp"
         />
 
         <Timeline
@@ -183,7 +161,7 @@ const WhiteIllusion: FC<IWhiteIllusion> = () => {
         <TextComponent
           fontSize="23px"
           text={data.textComponent.text2}
-          imageUrl="/assets/vardges-tatev/photo_2.webp"
+          imageUrl="/assets/manvel-diana/photo_2.webp"
         />
         <Footer />
 

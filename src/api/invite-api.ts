@@ -1,6 +1,6 @@
 export const sendInviteRequest = async (values: any) => {
   return await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/vardges-tatev-wedding/create`,
+    `${process.env.NEXT_PUBLIC_API_URL}/api/manvel-diana-wedding/create`,
     {
       method: 'POST',
       body: JSON.stringify(values),
@@ -13,6 +13,6 @@ export const sendInviteRequest = async (values: any) => {
 
 export const getGuests = async () => {
   return await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/vardges-tatev-wedding/guests`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/manvel-diana-wedding/guests`
   );
 };

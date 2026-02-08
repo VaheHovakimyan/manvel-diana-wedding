@@ -3,7 +3,7 @@
 import { FC } from 'react';
 import CustomImage from '../../Image/Image';
 import { TemplateDesign } from '../../../../public/types';
-import welcome_background from 'public/assets/vardges-tatev/photo_5.webp';
+import welcome_background from 'public/assets/manvel-diana/photo_5.webp';
 import { AmData } from '../../../template-designs';
 
 interface WelcomeProps {

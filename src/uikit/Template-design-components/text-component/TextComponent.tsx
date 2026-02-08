@@ -21,7 +21,14 @@ const TextComponent: React.FC<TextComponentProps> = ({
       <h4
         className={`bottom-text-comp absolute bottom-[10px] z-10 text-white text-[18px] p-8 text-center text-[${fontSize}]`}
       >
-        {text}
+        {/* {text} */}
+        Your presence
+        will make this day
+        even more special to us.
+        <br />
+        <br />
+        With love,
+        Manvel & Diana
       </h4>
     </div>
   );

@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import CustomImage from '../../Image/Image';
-import under_background from 'public/assets/vardges-tatev/photo_4.webp';
+import under_background from 'public/assets/manvel-diana/photo_4.webp';
 import { StaticImageData } from 'next/image';
 
 interface FinalMessageProps {
