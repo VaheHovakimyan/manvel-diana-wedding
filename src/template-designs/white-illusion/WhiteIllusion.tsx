@@ -158,7 +158,12 @@ const WhiteIllusion: FC<IWhiteIllusion> = () => {
         />
 
         <FinalMessage message={data.footer.text} />
-        <InviteForm />
+        {/* <InviteForm /> */}
+        <div className='bg-[rgba(10,10,10,0.8)] py-4'>
+        <CountDown />
+
+        </div>
+
         <TextComponent
           fontSize="23px"
           text={`Your presence

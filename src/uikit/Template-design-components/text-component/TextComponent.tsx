@@ -25,7 +25,6 @@ const TextComponent: React.FC<TextComponentProps> = ({
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
       <div className='absolute bottom-[10px] z-10 '>
-        {type === 'special' && <CountDown />}
         <h4
           className={`bottom-text-comp text-white text-[18px] text-center text-[${fontSize}] ${padding} whitespace-pre-line`}
         >
