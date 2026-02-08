@@ -5,9 +5,14 @@ const nextConfig = {
     unoptimized: true,
   },
 
+  // Add this to avoid Turbopack errors
+  turbopack: {},
+
   webpack: (config) => {
+    // Preserve your externals
     config.externals = [...config.externals, { canvas: 'canvas' }];
 
+    // Add your file-loader rule for pdf.worker.js
     config.module.rules.unshift({
       test: /pdf\.worker\.(min\.)?js/,
       use: [

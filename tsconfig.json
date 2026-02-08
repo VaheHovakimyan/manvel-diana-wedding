@@ -3,8 +3,11 @@
     "baseUrl": ".",
     "target": "ESNext",
     "module": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -14,7 +17,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -22,12 +25,28 @@
       }
     ],
     "paths": {
-      "@assets/*": ["public/assets/*"],
-      "@utils/*": ["public/utils/*"],
-      "@uikit/*": ["src/uikit/*"],
-      "@components/*": ["src/components/*"]
+      "@assets/*": [
+        "public/assets/*"
+      ],
+      "@utils/*": [
+        "public/utils/*"
+      ],
+      "@uikit/*": [
+        "src/uikit/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
