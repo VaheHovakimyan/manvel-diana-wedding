@@ -165,10 +165,10 @@ const InviteForm: React.FC = () => {
             )}
           </div>
           {/* <div> */}
-            {/* <label className="block text-[#4d3b2a] font-semibold mb-3">
+          {/* <label className="block text-[#4d3b2a] font-semibold mb-3">
               Ու՞մ կողմից *
             </label> */}
-            {/* <div className="flex gap-10">
+          {/* <div className="flex gap-10">
               <label className="flex items-center space-x-2">
                 <input
                   type="radio"
@@ -189,7 +189,7 @@ const InviteForm: React.FC = () => {
                 <span className="text-[#5a4636]">Հարսի</span>
               </label>
             </div> */}
-            {/* {errors.bride_groom && (
+          {/* {errors.bride_groom && (
               <p className="text-[#d41919] text-sm mt-2">
                 {errors.bride_groom.message}
               </p>

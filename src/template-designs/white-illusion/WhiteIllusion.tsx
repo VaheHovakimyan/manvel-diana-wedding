@@ -56,7 +56,7 @@ const amData = {
       eventPlace: 'ring',
       map: 'https://yandex.com/maps/-/CPE~iL63',
       mapName: 'Lianna Garden Hall',
-    }
+    },
   ],
   textComponent: {
     text1:

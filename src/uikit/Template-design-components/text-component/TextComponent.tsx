@@ -22,13 +22,10 @@ const TextComponent: React.FC<TextComponentProps> = ({
         className={`bottom-text-comp absolute bottom-[10px] z-10 text-white text-[18px] p-8 text-center text-[${fontSize}]`}
       >
         {/* {text} */}
-        Your presence
-        will make this day
-        even more special to us.
+        Your presence will make this day even more special to us.
         <br />
         <br />
-        With love,
-        Manvel & Diana
+        With love, Manvel & Diana
       </h4>
     </div>
   );
