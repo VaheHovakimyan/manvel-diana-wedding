@@ -15,6 +15,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Hraviratoms.com',
+  openGraph: {
+    title: 'Hraviratoms.com',
+    description: 'Սիրով հրավիրում ենք Ձեզ մեր նշանադրության արարողությանը',
+    images: [
+      {
+        url: '/assets/manvel-diana/photo_1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Manvel & Diana',
+      },
+    ],
+  },
   description: 'Սիրով հրավիրում ենք Ձեզ մեր նշանադրության արարողությանը',
 };
 

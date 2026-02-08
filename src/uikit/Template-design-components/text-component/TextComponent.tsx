@@ -19,13 +19,9 @@ const TextComponent: React.FC<TextComponentProps> = ({
       ></div>
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <h4
-        className={`bottom-text-comp absolute bottom-[10px] z-10 text-white text-[18px] p-8 text-center text-[${fontSize}]`}
+        className={`bottom-text-comp absolute bottom-[10px] z-10 text-white text-[18px] p-8 text-center text-[${fontSize}] whitespace-pre-line`}
       >
-        {/* {text} */}
-        Your presence will make this day even more special to us.
-        <br />
-        <br />
-        With love, Manvel & Diana
+        {text}
       </h4>
     </div>
   );

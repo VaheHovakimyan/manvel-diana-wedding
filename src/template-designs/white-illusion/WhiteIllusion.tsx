@@ -47,7 +47,7 @@ const amData = {
     title2: 'ծրագիր',
   },
   footer: {
-    text: 'Սիրով հրավիրում ենք Ձեզ մեր նշանադրության արարողությանը',
+    text: 'With love in every detail, we invite you to join us in celebrating one of the most meaningful moments of our lives.',
   },
   eventProgram: [
     {
@@ -146,7 +146,7 @@ const WhiteIllusion: FC<IWhiteIllusion> = () => {
 
         <TextComponent
           fontSize="20px"
-          text={data.textComponent.text1}
+          text={`Սիրով հրավիրում ենք Ձեզ մեր նշանադրության արարողությանը`}
           imageUrl="/assets/manvel-diana/photo_3.webp"
         />
 
@@ -160,7 +160,11 @@ const WhiteIllusion: FC<IWhiteIllusion> = () => {
         <InviteForm />
         <TextComponent
           fontSize="23px"
-          text={data.textComponent.text2}
+          text={`Your presence
+                will make this day
+                even more special to us.
+
+                With love, Manvel & Diana`}
           imageUrl="/assets/manvel-diana/photo_2.webp"
         />
         <Footer />
