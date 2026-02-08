@@ -54,11 +54,11 @@ const Admin: FC = () => {
                 Ներկա Կգտնվի՞
               </div>
             </div>
-            <div className="guestRow">
+            {/* <div className="guestRow">
               <div className="admin_param" id="guest_side">
                 Ու՞մ կողմից
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {guests.length > 0 &&
@@ -91,11 +91,11 @@ const Admin: FC = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="guestRow">
+                  {/* <div className="guestRow">
                     <div id="guest_bride_groom" className="td">
                       <p className="td_p">{item.bride_groom}</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             );
