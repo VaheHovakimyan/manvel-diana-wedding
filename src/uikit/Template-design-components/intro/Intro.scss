@@ -1,0 +1,36 @@
+.save-date-section {
+  opacity: 0;
+  transform: translateY(70px);
+  animation: fadeSlideIn 1s ease-out forwards;
+  will-change: opacity, transform;
+}
+
+.save-date {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 0;
+  line-height: 1.2;
+}
+.save-date span {
+  font-size: 2.5rem;
+}
+.names {
+  margin-top: 1rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.armenian-text {
+  margin-top: 0.8rem;
+  font-size: 1.35rem;
+  font-family: math;
+  letter-spacing: 1.2px;
+  font-style: italic;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

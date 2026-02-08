@@ -1,0 +1,27 @@
+.call_to {
+  width: 50px;
+  height: 50px;
+  background-color: #00903a;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  animation: pulse-animation 2s infinite;
+  z-index: 99999999;
+  cursor: pointer;
+  .call_to_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 169, 37, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 169, 37, 0);
+  }
+}

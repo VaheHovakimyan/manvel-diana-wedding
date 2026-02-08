@@ -1,0 +1,8 @@
+/* src/assets/fonts/fonts.css */
+@font-face {
+  font-family: 'MontserratarmThin';
+  src: url('./Montserratarm-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
